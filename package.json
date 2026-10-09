@@ -1,0 +1,31 @@
+{
+  "name": "mcp-m365-copilot",
+  "version": "1.0.0",
+  "description": "Serveur MCP local pour Microsoft 365 Copilot Enterprise - Zero data leak",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-m365-copilot": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "audit": "npm audit --json > audit-report.json",
+    "audit-fix": "npm audit fix"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.13.3",
+    "@microsoft/microsoft-graph-client": "3.0.7",
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "isomorphic-fetch": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.0",
+    "typescript": "5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
