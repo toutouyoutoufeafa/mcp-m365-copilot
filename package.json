@@ -15,7 +15,7 @@
     "audit-fix": "npm audit fix"
   },
   "dependencies": {
-    "@azure/identity": "^4.13.3",
+    "@azure/identity": "^4.14.0",
     "@microsoft/microsoft-graph-client": "3.0.7",
     "@modelcontextprotocol/sdk": "^1.32.1",
     "isomorphic-fetch": "3.0.0"
